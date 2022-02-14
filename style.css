@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-item {
+  border: 2px solid green;
+  /* float: left; */
+  /* display: inline; */
+}
+
+.nav-right {
+  /* float: right; */
+  /* margin-left: 20px; */
+  /* margin-right: 
+  auto; */
+  float: right;
+  /* margin-left: auto; */
+}
+.nav-center {
+  /* clear: right; */
+  float: left;
+  width: 70%;
+  /* clear: left; */
+  /* width: 40px; */
+  /* margin-left: auto; */
+  /* margin-right: 40px; */
+  /* margin: auto; */
+  /* margin-left: auto; */
+  /* float: none; */
+}
+.nav-center a {
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+.nav-left {
+  float: left;
+}
+.nav-list {
+  border: 2px solid red;
+  /* clear: both; */
+  height: 100%;
+  width: 100vw;
+}
