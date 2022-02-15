@@ -8,19 +8,21 @@ header {
   background-color: #434c5e;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid yellow;
 }
 
 .nav-bar {
-  padding: 2rem;
+  padding: 1rem 2rem;
+  /* border: 2px solid red; */
 }
 .nav-list {
   display: inline-block;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   width: 100%;
 }
 
 .nav-item {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   /* float: left; */
   /* display: inline; */
   list-style: none;
@@ -44,6 +46,8 @@ header {
   color: #434c5e;
   border: none;
   border-radius: 3px;
+  font-weight: bold;
+  /* font-size: ; */
 }
 .nav-center {
   /* clear: right; */
@@ -58,6 +62,7 @@ header {
   margin: 0 5%;
   /* margin-left: auto; */
   /* float: none; */
+  /* clear: both; */
 }
 .nav-center a {
   margin: 0 50%;
@@ -110,9 +115,93 @@ header {
 .section-why {
   text-align: center;
   margin-top: 4rem;
+  padding-bottom: 3rem;
 }
 .section-why p {
   margin-top: 1rem;
   width: 80%;
   max-width: 30rem;
+}
+.section-card {
+  /* border: 2px solid yellow; */
+  display: block;
+  background-color: rgb(192, 192, 192);
+  display: inline-block;
+  width: 100%;
+  padding: 3rem 0;
+}
+.card {
+  max-width: 30rem;
+  width: 100%;
+  padding: 2rem;
+  margin: 0 10%;
+  text-align: center;
+}
+.card div {
+  width: 80%;
+  height: 12rem;
+  background-color: #434c5e;
+  margin: 2rem auto;
+}
+.card p {
+  margin-top: 1rem;
+}
+.card button {
+  border: 1.5px solid #242526;
+  padding: 0.7rem 1.4rem;
+  margin-top: 2rem;
+  background-color: rgb(192, 192, 192);
+}
+.card-left {
+  float: left;
+  margin-right: 1rem;
+}
+.card-right {
+  float: right;
+  margin-left: 1rem;
+}
+.section-volunteer {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.section-volunteer h1 {
+  margin-top: 5rem;
+}
+.section-volunteer p {
+  /* margin-top: 5rem; */
+  /* margin-top: 1rem; */
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 30rem;
+}
+.section-volunteer button {
+  /* margin-top: 5rem; */
+  border: 1.5px solid #242526;
+  padding: 0.7rem 1.4rem;
+  /* margin-top: 2rem; */
+  background-color: white;
+}
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #434c5e;
+  color: white;
+  padding: 1.5rem;
+}
+footer section {
+  border: 2px solid gold;
+}
+.footer-left {
+  float: left;
+  margin-bottom: 0.7rem;
+}
+.footer-right {
+  float: right;
+  margin-bottom: 0.7rem;
+}
+.footer-bottom {
+  clear: both;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
 }
