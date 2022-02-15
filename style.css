@@ -3,41 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 header {
   background-color: #434c5e;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid yellow;
 }
 
 .nav-bar {
   padding: 1rem 2rem;
-  /* border: 2px solid red; */
 }
 .nav-list {
   display: inline-block;
-  border: 2px solid red;
+
   width: 100%;
 }
 
 .nav-item {
-  border: 2px solid green;
-  /* float: left; */
-  /* display: inline; */
   list-style: none;
 }
 .nav-item a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 .nav-right {
-  /* float: right; */
-  /* margin-left: 20px; */
-  /* margin-right: 
-  auto; */
   float: right;
-  /* margin-left: auto; */
 }
 .nav-right button {
   padding: 0.4rem 1rem;
@@ -47,27 +40,22 @@ header {
   border: none;
   border-radius: 3px;
   font-weight: bold;
-  /* font-size: ; */
 }
 .nav-center {
-  /* clear: right; */
   float: left;
   width: 65%;
-  /* height: 100%; */
-  /* clear: left; */
-  /* border: 2px solid yellow; */
-  /* width: 40px; */
-  /* margin-left: auto; */
-  /* margin-right: 40px; */
   margin: 0 5%;
-  /* margin-left: auto; */
-  /* float: none; */
-  /* clear: both; */
 }
 .nav-center a {
   margin: 0 50%;
-  border: 2px solid blue;
   color: white;
+  width: 3rem;
+  height: 100%;
+}
+.nav-center a img {
+  object-fit: cover;
+  color: white;
+  width: 3rem;
 }
 
 .nav-left {
@@ -81,49 +69,48 @@ header {
   background-color: #434c5e;
   color: aliceblue;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 3rem;
 }
 .landing-page h1 {
   margin-top: 8rem;
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 .landing-page p,
 .page-text {
   text-align: center;
   margin: 3rem auto;
   font-size: 1rem;
-  /* font-weight: 300; */
-  width: 48rem;
+  width: 55rem;
   line-height: 1.3rem;
   word-spacing: 0.3rem;
   letter-spacing: 0.08rem;
-
-  /* border: 2px solid yellow; */
 }
-
 .landing-page span {
   font-size: 0.75rem;
   color: black;
   font-style: oblique;
   display: inline-block;
-  /* margin-bottom: 7rem; */
-  /* border: 2px solid red; */
   margin-top: 2rem;
   word-spacing: 0.3rem;
 }
+
 .section-why {
   text-align: center;
   margin-top: 4rem;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
+}
+.section-why h1 {
+  font-size: 2.5rem;
 }
 .section-why p {
   margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #434c5e;
   width: 80%;
   max-width: 30rem;
 }
+
 .section-card {
-  /* border: 2px solid yellow; */
   display: block;
   background-color: rgb(192, 192, 192);
   display: inline-block;
@@ -142,9 +129,12 @@ header {
   height: 12rem;
   background-color: #434c5e;
   margin: 2rem auto;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .card p {
   margin-top: 1rem;
+  color: #434c5e;
+  font-size: 0.9rem;
 }
 .card button {
   border: 1.5px solid #242526;
@@ -160,36 +150,33 @@ header {
   float: right;
   margin-left: 1rem;
 }
+
 .section-volunteer {
   text-align: center;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
 .section-volunteer h1 {
-  margin-top: 5rem;
+  font-size: 1.8rem;
 }
 .section-volunteer p {
-  /* margin-top: 5rem; */
-  /* margin-top: 1rem; */
   margin: 2rem auto;
   width: 80%;
+  font-size: 0.9rem;
+  color: #434c5e;
   max-width: 30rem;
 }
 .section-volunteer button {
-  /* margin-top: 5rem; */
   border: 1.5px solid #242526;
   padding: 0.7rem 1.4rem;
-  /* margin-top: 2rem; */
   background-color: white;
 }
+
 footer {
   display: inline-block;
   width: 100%;
-  background-color: #434c5e;
+  background-color: #000000;
   color: white;
   padding: 1.5rem;
-}
-footer section {
-  border: 2px solid gold;
 }
 .footer-left {
   float: left;
@@ -198,10 +185,47 @@ footer section {
 .footer-right {
   float: right;
   margin-bottom: 0.7rem;
+  margin-right: 5rem;
+  width: 8rem;
+}
+.footer-right h3 {
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+.footer-right p {
+  font-size: 0.8rem;
+  color: grey;
+}
+.footer-left p {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+.footer-left h3 {
+  color: grey;
+  font-size: 0.7rem;
+  clear: both;
+  margin: 0.4rem 0;
+}
+.footer-left a,
+.footer-right a {
+  color: white;
+  text-decoration: none;
 }
 .footer-bottom {
   clear: both;
   font-size: 0.75rem;
   font-weight: bold;
   margin-top: 0.6rem;
+  border-top: 2px solid grey;
+  padding-top: 1rem;
+}
+.footer-bottom h3 {
+  width: 70%;
+  font-size: 0.8rem;
+}
+.footer-bottom img {
+  width: 2rem;
+  float: right;
 }
